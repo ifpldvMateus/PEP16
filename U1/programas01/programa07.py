@@ -1,3 +1,9 @@
+'''
+Escribe un programa que use la función print() para
+- Escribir un el número 34 en binario, otro en octal y otro en hexadecimal
+- Escribir los números 0b1001, 0o12, 0xa3f en decimal
+'''
+
 print("34 en binario:", bin(34))
 print("34 en octal:", oct(34))
 print("34 en hexadecimal:", hex(34))
