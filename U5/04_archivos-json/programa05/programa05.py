@@ -2,13 +2,7 @@ from os import strerror
 import json
 
 def normalizar(cadena):
-    cadena = cadena.lower()
-
-    reemplazos = {"á":"a", "é":"e", "í":"i", "ó":"o", "ú":"u", "ñ":"n"}
-    for c, v in reemplazos.items():
-        cadena = cadena.replace(c, v)
-    
-    return cadena
+    return cadena.lower().translate(str.maketrans("áéíóúñ", "aeioun"))
 
 try:
     filtrados = []
